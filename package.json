@@ -1,0 +1,25 @@
+{
+  "name": "BeAnArtist",
+  "version": "1.0.0",
+  "description": "Be an Artist",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lllang/BeAnArtist.git"
+  },
+  "keywords": [
+    "artist"
+  ],
+  "author": "lllang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lllang/BeAnArtist/issues"
+  },
+  "homepage": "https://github.com/lllang/BeAnArtist#readme",
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
+}
