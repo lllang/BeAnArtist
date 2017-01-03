@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.BeAnArtist.FirstStep.dao.user.UserLoginDao">
+
+	<resultMap type="com.BeAnArtist.FirstStep.model.user.User" id="user">
+		<result column="user_name" property="userName"/>
+		<result column="user_password" property="userPassword"/>
+	</resultMap>
+	
+	<select id="countUserNum" resultType="java.lang.Integer">
+		select count(user_id) from user_info where user_name = #{0} and user_password = #{1}
+	</select>
+
+
+</mapper>
